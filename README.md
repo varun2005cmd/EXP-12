@@ -127,6 +127,45 @@ int main() {
 ## Code Output 
 
 
+## Destructors 
+
+### Application of destructors 
+1. **Resource Management:** Frees resources like memory or connections when an object is destroyed.
+
+2. **Memory Cleanup:** Prevents memory leaks by deallocating memory used by the object.
+
+3. **Closing Files/Connections:** Ensures files or network connections are properly closed.
+
+4. **Releasing Locks:** Releases synchronization locks to prevent deadlocks.
+
+5. **Logging and Debugging:** Logs object destruction for debugging purposes.
+
+6. **Custom Cleanup:** Handles specific cleanup tasks required by the object.
+
+### Advantages of Destructors:
+
+1. **Automatic Resource Management:** Ensures resources are released automatically when objects are destroyed, reducing the risk of resource leaks.
+  
+2. **Simplifies Code:** Eliminates the need for manual cleanup, making code cleaner and easier to maintain.
+
+3. **Error Prevention:** Reduces the likelihood of errors like memory leaks and dangling pointers by ensuring proper resource deallocation.
+
+4. **Consistent Cleanup:** Guarantees that cleanup tasks are performed consistently, even in the presence of exceptions or errors.
+
+5. **Encapsulation:** Keeps resource management encapsulated within the object, adhering to the principles of object-oriented programming.
+
+### Disadvantages of Destructors:
+
+1. **Hidden Costs:** Destructors can introduce hidden performance costs, especially if complex cleanup tasks are involved.
+
+2. **Uncontrolled Timing:** In some languages (e.g., Python), the timing of destructor calls is not guaranteed, which can lead to unpredictable resource management.
+
+3. **Order of Destruction:** Destructors might be called in an order that could cause issues, especially with dependencies between objects.
+
+4. **Circular References:** In languages with reference counting (e.g., Python), circular references can prevent destructors from being called, leading to resource leaks.
+
+5. **Complex Debugging:** Errors in destructors can be difficult to debug, especially if they are related to resource management.
+
 ## Conclusion 
 - We learnt how to execute a code using different types of constructors in C++ programming language
 - We learnt the different types of constructors , their advantages, the disadvantages and the applications
