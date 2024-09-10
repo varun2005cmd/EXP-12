@@ -166,6 +166,40 @@ int main() {
 
 5. **Complex Debugging:** Errors in destructors can be difficult to debug, especially if they are related to resource management.
 
+
+### Code
+
+```
+// Varun Pendem
+//PRN: 23070123149
+
+#include<iostream>
+using namespace std;
+int count=0;
+
+class destruct{
+public:
+destruct()
+{
+  count++;
+  cout<<"No. of objects created:"<<count<<endl;
+}
+~destruct()
+{
+  count--;
+  cout<<"No. of objects destroyed:"<<count<<endl;
+}
+};
+
+int main()
+{
+destruct aa,bb,cc;
+{ destruct dd;
+}
+return 0;
+}
+```
+
 ## Conclusion 
 - We learnt how to execute a code using different types of constructors in C++ programming language
 - We learnt the different types of constructors , their advantages, the disadvantages and the applications
