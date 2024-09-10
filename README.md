@@ -202,6 +202,9 @@ return 0;
 ```
 ### Code Output
 
+![image](https://github.com/user-attachments/assets/d71de6d9-976c-47c9-a996-b6daca51fdab)
+
+
 
 
 ## Conclusion 
